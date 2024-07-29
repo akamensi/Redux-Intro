@@ -91,16 +91,16 @@ function payLoan() {
 }
 
 store.dispatch(deposit(500));
-console.log(store.getState());
+//console.log(store.getState());
 
 store.dispatch(withdraw(300));
-console.log(store.getState());
+//console.log(store.getState());
 
 store.dispatch(requestLoan(1500, "buy a PS5"));
-console.log(store.getState());
+//console.log(store.getState());
 
 store.dispatch(payLoan());
-console.log(store.getState());
+//console.log(store.getState());
 
 function createCustomer(fullName, nationalID) {
   return {
@@ -110,7 +110,7 @@ function createCustomer(fullName, nationalID) {
 }
 
 store.dispatch(createCustomer("Med Akez", "00216961565"));
-console.log(store.getState());
+//console.log(store.getState());
 
 function updateName(fullName) {
   return {
@@ -120,4 +120,4 @@ function updateName(fullName) {
 }
 
 store.dispatch(updateName("Mohamed Akez"));
-console.log(store.getState());
+//console.log(store.getState());
